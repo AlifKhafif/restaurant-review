@@ -85,3 +85,15 @@ data class Restaurant(
 	@field:SerializedName("menus")
 	val menus: Menus
 )
+
+data class PostReviewResponse(
+
+	@field:SerializedName("customerReviews")
+	val customerReviews: List<CustomerReviewsItem>,
+
+	@field:SerializedName("error")
+	val error: Boolean,
+
+	@field:SerializedName("message")
+	val message: String
+)
